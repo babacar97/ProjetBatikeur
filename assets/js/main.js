@@ -1,9 +1,4 @@
-/**
-* Template Name: UpConstruction - v1.2.1
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -25,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -61,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -79,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -117,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
+      menuFilters.forEach(function (el) {
+        el.addEventListener('click', function () {
           document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           portfolioIsotope.arrange({
@@ -210,3 +205,106 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+// Script pour le diaporama partenaire
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.querySelectorAll('.swiper-wrapper .testimonial-img');
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'block';
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = 'none';
+  setTimeout(showSlides, 500); // Change image every 2 seconds
+}
+
+
+
+// scripte concernant le formulaire
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    subject: document.getElementById("subject").value,
+  };
+
+  const serviceID = "service_n2fg752";
+  const templateID = "template_1tzmqwp";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("subject").value = "";
+      console.log(res);
+      alert("otre message a été reçu avec succes .Merci !")
+
+    })
+    .catch(err => console.log(err));
+
+}
+
+
+function sendMail1() {
+  var params = {
+    regionInput: document.getElementById("regionInput").value,
+    natureInput: document.getElementById("natureInput").value,
+    standingInput: document.getElementById("standingInput").value,
+    superficieInput: document.getElementById("superficieInput").value,
+    urgenceInput: document.getElementById("urgenceInput").value,
+    file: document.getElementById("file").value,
+    adressExacte: document.getElementById("adressExacte").value,
+    ConfigurationProjet: document.getElementById("ConfigurationProjet").value,
+    cs: document.getElementById("cs").value,
+    chsdb: document.getElementById("chsdb").value,
+    salon: document.getElementById("salon").value,
+    toilette: document.getElementById("toilette").value,
+    cuisine: document.getElementById("cuisine").value,
+    garage: document.getElementById("garage").value,
+    nom: document.getElementById("nom").value,
+    prenom: document.getElementById("prenom").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+  };
+
+  const serviceID = "service_t0p6pyb";
+  const templateID = "template_2um6bcg";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("regionInput").value = "";
+      document.getElementById("natureInput").value = "";
+      document.getElementById("standingInput").value = "";
+      document.getElementById("superficieInput").value = "";
+      document.getElementById("urgenceInput").value = "";
+      document.getElementById("file").value = "";
+      document.getElementById("AdressExacte").value = "";
+      document.getElementById("ConfigurationProjet").value = "";
+      document.getElementById("cs").value = "";
+      document.getElementById("chsdb").value = "";
+      document.getElementById("salon").value = "";
+      document.getElementById("toilette").value = "";
+      document.getElementById("cuisine").value = "";
+      document.getElementById("garage").value = "";
+      document.getElementById("nom").value = "";
+      document.getElementById("prenom").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      console.log(res);
+      alert("otre message a été reçu avec succes .Merci! !")
+
+    })
+    .catch(err => console.log(err));
+
+}

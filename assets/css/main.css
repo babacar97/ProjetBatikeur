@@ -19,25 +19,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-.btn-get-startedBU {
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #ee7800;
-  border: 2px solid var(--color-primary);
-
-}
-
-.btn-get-startedBU :hover {
-  color: white;
-  background-color: #ee7800;
-}
 
 body {
   font-family: var(--font-default);
@@ -303,6 +284,13 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+    color: var(--color-primary);
+    position: relative;
+    left: -50px;
+  }
+
+  .navbar-divider {
+    border-right: 1px solid var(--color-primary);
   }
 
   .navbar li {
@@ -319,11 +307,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3px;
+    padding: 0px;
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-primary);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -337,13 +325,24 @@ section {
     margin-left: 5px;
   }
 
+  .en-tete1 {
+    position: relative;
+    height: 20px;
+    background-color: var(--color-primary);
+    ;
+  }
+
+  .en-tete {
+
+    height: 72px;
+  }
+
   .navbar>ul>li>a:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: -6px;
-    left: 0;
     background-color: var(--color-primary);
     visibility: hidden;
     width: 0px;
@@ -361,33 +360,14 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
-  }
-
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 28px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-  }
-
-  .navbar .dropdown ul li {
-    min-width: 200px;
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
+    padding: 10px 10px;
+    font-size: 2px;
     text-transform: none;
-    color: var(--color-default);
+    color: var(--color-primary);
     font-weight: 400;
   }
 
@@ -472,7 +452,7 @@ section {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
@@ -1005,11 +985,15 @@ section {
   transform: scale(1.1);
 }
 
+.plaquette {
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
-  padding-left: 50px;
+  padding-left: 0px;
 }
 
 .testimonials .testimonials-carousel,
@@ -1019,80 +1003,30 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 30px 60px;
-  margin: 0 15px 30px 0;
-  min-height: 200px;
-  box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
+  padding: 30px 30px 30px;
+  margin: 0px 15px 30px;
+  min-height: 90px;
   position: relative;
-  background: #fff;
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
   border-radius: 10px;
   border: 6px solid #fff;
-  position: absolute;
-  left: -45px;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #000;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item .stars {
-  margin: 10px 0;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ee7800;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #ee7800;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
   position: relative;
 }
 
+.testimonial-img {
+  position: relative;
+  height: 150px;
+  width: 200px;
+}
+
+
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
-  right: -5px;
   position: relative;
   top: 10px;
   transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #d5d7da;
-  opacity: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1942,6 +1876,25 @@ section {
   font-size: 18px;
 }
 
+/* .btn-get-startedTete11 {
+  font-size: 12px;
+  border-radius: 50px;
+  color: #ee7800;
+  height: 20px;
+  width: 150px;
+  border: 2px solid var(--color-primary);
+}
+
+.btn-get-startedTete11 hover {
+  color: #d9e3e8;
+  font-size: 10px;
+
+}
+
+.btn-get-startedTete11:hover {
+  color: white;
+} */
+
 .hero .info .btn-get-started {
   font-family: var(--font-primary);
   font-weight: 500;
@@ -2586,11 +2539,7 @@ section {
 
 
 
-.demareProjet {
-  position: relative;
-  bottom: -80px;
-
-}
+.demareProjet {}
 
 .textBa {
   position: relative;
@@ -2603,7 +2552,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: var(--color-primary);
+  background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2612,7 +2561,7 @@ section {
 
 .footer:before {
   content: "";
-  /*background: rgba(0, 0, 0, 0.8);*/
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
 }
@@ -2716,7 +2665,7 @@ section {
   background-color: var(--color-primary);
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 11px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
@@ -2725,7 +2674,7 @@ section {
   margin: 10px;
   color: #fff;
   border: 2px solid var(--color-primary);
-
+  width: 200px;
 }
 
 .DevisOff hover {
@@ -2763,7 +2712,7 @@ section {
 
 }
 
-.btn-get-startedBU :hover {
+.tn-get-startedBU :hover {
   color: white;
-  background-color: #ee7800;
+  background-color: var(--color-primary);
 }
