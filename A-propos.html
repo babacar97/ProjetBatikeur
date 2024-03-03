@@ -39,7 +39,7 @@
             padding-bottom: 6rem;
             text-align: center;
             color: #fff;
-            background-color: #ee7800;
+            background-color: gainsboro;
             background-repeat: no-repeat;
             background-attachment: scroll;
             background-position: center center;
@@ -84,16 +84,23 @@
             }
 
             .bg-white {
+                position: relative;
                 color: #ee7800;
+                right: inherit;
                 font-size: 60px;
             }
 
             .btn-xl {
-                padding: 1.25rem 2.5rem;
+                position: relative;
+                left: -40px;
                 font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                 font-size: 1.125rem;
-                font-weight: 700;
+                font-weight: 900;
+
             }
+
+
+
         }
     </style>
 </head>
@@ -106,7 +113,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/logo batikeur -officiel.png" class="rounded-circle" alt="">
+                <img src="assets/img/logo batikeur -officiel.png" class="logo rounded-circle" alt="">
                 <!-- <h1>BatiKeur-Group<span>.</span></h1> -->
             </a>
 
@@ -119,13 +126,13 @@
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="A-propos.html">A propos</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#services"> Nos Services</a></li>
+                    <li><a href="index.html#services"> Nos Services</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#projects">Nos Projects</a></li>
+                    <li><a href="index.html#projects">Nos Projects</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#marche">Comment ça marche</a></li>
+                    <li><a href="index.html#marche">Comment ça marche</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a class="" href="https://calendly.com/batikeur"> UN RENDEZ-VOUS</a></li>
                     <li class="nav-item navbar-divider"></li>
@@ -145,8 +152,9 @@
         <div class="container">
             <div class="masthead-subheading"><span class="bg-white rounded-2">Bienvenue Chez Batikeur Group</span>
             </div>
-            <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#about">En Savoir Plus</a> -->
         </div>
+        <a class="btn btn-xl bg-white" href="#about" style="position:relative; left: 5px;">En Savoir
+            Plus</a>
     </header>
 
 
@@ -154,18 +162,19 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">A Propos</h2>
-                <h3 class="section-subheading text-muted">Toutes les informations à propos d'Africa Smart Cities</h3>
+                <h3 class="section-subheading text-muted">Toutes les informations à propos de Batikeur. </h3>
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/propos-1.jpg"
-                            alt="..." /></div>
+                    <div class="timeline-image"><img class="img-presentation rounded-circle  img-fluid"
+                            src="assets/img/P1.PNG" style="height: 165px; width: 160px;"
+                            media="screen and (max-width: 1280px)" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Qui Sommes Nous</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Batikeur Group est votre batisseur
+                            <p class="text-justify">Batikeur Group est votre batisseur
                                 2.0 qui vous propose des solutions
                                 immobilières digitalisées, par des
                                 professionnels certifiés, pour vous offrir
@@ -174,8 +183,8 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/Propos-2.jpg"
-                            alt="Vision" /></div>
+                    <div class="timeline-image"><img class="img-presentation rounded-circle img-fluid"
+                            style="height: 168px; width: 160px;" src="assets/img/P4.PNG" alt="Vision" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Notre Vision</h4>
@@ -186,8 +195,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/propos-3.jpg"
-                            alt="Mission" /></div>
+                    <div class="timeline-image"><img class="img-presentation rounded-circle img-fluid"
+                            src="assets/img/P2.PNG" style="height: 165px; width: 160px;" alt="Mission" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Notre Mission</h4>
@@ -199,15 +208,15 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/propos-4.jpg"
-                            alt="valeurs" /></div>
+                    <div class="timeline-image"><img class="img-presentation rounded-circle img-fluid"
+                            src="assets/img/P3.PNG" style="height: 165px; width: 160px;" alt="valeurs" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4>Nos Valeurs</h4>
                         </div>
                         <div class="timeline-body">
                             <p class="text-muted">Nos valeurs Fondamentales sont : <br><span
-                                    class="text-muted valeurs">Ethique - Innovation - Eco-responsable</span></p>
+                                    class="text-muted valeurs">Ethique - Innovation - Eco-responsabilité</span></p>
                         </div>
                     </div>
                 </li>
@@ -225,8 +234,8 @@
             </ul>
         </div>
     </section>
-    <!-- ======= A propos -->
-
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e49fe563-5aa0-43e8-92cd-244c28b813fb " data-elfsight-app-lazy></div>
     <footer id="footer" class="footer">
 
         <div class="footer-content position-relative">
@@ -237,15 +246,21 @@
                         <div class="footer-info">
                             <h4>A PROPOS </h4>
                             <p>
-                                <a href="index.html" class="logo d-flex align-items-center">
+                                <a href="index.html" class="logo d-flex text-center">
+
                                     <!-- Uncomment the line below if you also wish to use an image logo -->
                                     <img src="assets/img/logo batikeur -officiel.png" alt="" height="60" width="60"
-                                        class="text-center rounded-circle">
-                                    <!-- <h1>BatiKeur-Group<span>.</span></h1> -->
+                                        class="text-center rounded-circle logo"
+                                        style="position: relative; left: 140px;">
+                                    <!--  -->
                                 </a>
-                                Batikeur Group est votre batisseur 2.0 qui vous propose des <br> solutions
-                                immobilières innovantes, pour vous offrir un cadre de <br> vie durable
-                                <br>
+                            <p style="visibility: hidden;"> nnnnnnn</p>
+                            Batikeur Group est votre batisseur 2.0 qui vous propose des <br> solutions
+                            immobilières innovantes, pour vous offrir un cadre de <br> vie durable
+                            <br>
+                            Adress : Rufisque Ouest, Sortie 9 Péage. Dakar SENEGAL
+                            Telephone : +221 78 154 05 19 / 76 649 09 56 <br>
+                            Email : contact@batikeur.com
                             </p>
                         </div>
 
@@ -253,13 +268,13 @@
                     <div class="col-lg-2 col-md-3 footer-links">
                         <h4>LIENS UTILES</h4>
                         <ul>
-                            <li><a href="">Nos services</a> </li>
-                            <li><a href="">Choisir un pack</a> </li>
-                            <li><a href="">RDV en ligne</a> </li>
-                            <li><a href="">Demander un devis</a></li>
-                            <li><a href="">Comment ca marche?</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="A-propos.html">Contact</a></li>
+                            <li><a href="index.html#services">NOS SOLUTIONS</a> </li>
+                            <li><a href="index.html#pack">CHOISIR UN PACK</a> </li>
+                            <li><a href="https://calendly.com/batikeur" target="_blank">RDV EN LIGNE</a> </li>
+                            <li><a href="https://form.jotform.com/240614963848567" target="_blank">DEMANDEZ UN DEVIS</a>
+                            </li>
+                            <li><a href="index.html#marche" style="text-transform:uppercase">COMMENT çA MARCHE </a></li>
+                            <li><a href="index.html#contact">CONTACT</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-3 footer-links">
@@ -267,6 +282,7 @@
                         <ul>
                             <li> Qualité de service </li>
                             <li> Transparence</li>
+                            <li> Respect des delais</li>
                             <li> Satisfaction client</li>
                         </ul>
 
@@ -288,7 +304,10 @@
                                     class="bi bi-linkedin"></i></a>
                         </div>
                         <br>
-
+                        <a href="assets/Plaquette Batikeur 2.0.pdf" download="plaquette batikeur 2.0.pdf"
+                            class="plaquette">Restez
+                            connectés !
+                        </a>
                     </div><!-- End footer links column-->
 
 
@@ -300,7 +319,8 @@
         <div class="footer-legal text-center position-relative">
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>by Batikeur Group</span></strong>. Tous droits Reservé concepteur
+                    &copy; Copyright 2024 <strong><span>by Batikeur Group</span></strong>. Tous droits Reservés.
+                    Concepteur :
                     <strong>Babacar NDIAYE</strong>
                 </div>
                 <div class="credits">
@@ -308,9 +328,6 @@
                 </div>
             </div>
         </div>
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-e49fe563-5aa0-43e8-92cd-244c28b813fb" data-elfsight-app-lazy></div>
-
     </footer>
     <!-- End Footer -->
 
@@ -330,15 +347,6 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <!-- Template JS concernant le formulaire -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "smRmADMeTFgD7vW8f",
-            });
-        })();
-    </script>
 
 </body>
 

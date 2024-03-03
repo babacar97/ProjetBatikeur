@@ -161,7 +161,7 @@ section {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 90px;
   z-index: 99999;
   background: var(--color-primary);
   width: 40px;
@@ -296,7 +296,7 @@ section {
     padding: 0;
   }
 
-  .navbar ul:not(.btn) {
+  .navbar ul:not(.btn, .btn-x) {
     margin: 0;
     padding: 0;
     display: flex;
@@ -321,7 +321,7 @@ section {
   }
 
   .navbar a,
-  .navbar a:focus :not(.btn) {
+  .navbar a:focus :not(.btn, .btn-x) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -377,11 +377,11 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a :not(.btn) {
+  .navbar li:hover>a :not(.btn, .btn-x) {
     color: var(--color-primary);
   }
 
-  .navbar .dropdown ul a:not(btn) {
+  .navbar .dropdown ul a:not(btn, .btn-x) {
     padding: 10px 10px;
     font-size: 2px;
     text-transform: none;
@@ -1871,7 +1871,7 @@ section {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
+  font-size: 38px;
   font-weight: 700;
   position: relative;
 }
@@ -2678,9 +2678,11 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  color: var(--color-primary);
+  color: white;
   border: 2px solid var(--color-primary);
   width: 200px;
+  position: relative;
+  left: 100px;
 }
 
 .DevisOff :hover {
@@ -2836,9 +2838,9 @@ section {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid var(--color-primary);
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: var(--color-primary);
 }
 
 .timeline>li .timeline-image h4,
@@ -2874,6 +2876,7 @@ section {
 
 .timeline .timeline-heading h4,
 .timeline .timeline-heading .h4 {
+  text-align: left;
   margin-top: 0;
   color: inherit;
 }
@@ -2885,10 +2888,13 @@ section {
 
 .timeline .timeline-body>ul,
 .timeline .timeline-body>p {
+  text-align: justify;
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
+
+
   .timeline:before {
     left: 50%;
   }
