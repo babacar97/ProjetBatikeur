@@ -3004,3 +3004,11 @@ section {
 ul {
   list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+  .btn-get-startedTete11 {
+    position: relative;
+    width: 200px;
+
+  }
+}
