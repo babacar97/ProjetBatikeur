@@ -106,7 +106,11 @@
         @media screen and (max-width: 768px) {
             .img-presentation {
                 display: none;
+            }
 
+            .logo {
+                position: relative;
+                top: -15px;
             }
         }
 
@@ -115,6 +119,32 @@
         .img-presentation {
             height: 165px;
             width: 160px
+        }
+
+
+        .mobile-nav-show {
+            position: relative;
+            color: black;
+            font-size: 28px;
+            cursor: pointer;
+            line-height: 0;
+            transition: 0.5s;
+            z-index: 9999;
+            padding-right: 10px;
+            top: -20px;
+
+        }
+
+        .mobile-nav-hide {
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            line-height: 0;
+            transition: 0.5s;
+            position: fixed;
+            right: 20px;
+            top: 30px;
+            z-index: 9999;
         }
     </style>
 </head>
@@ -131,7 +161,7 @@
                 <!-- <h1>BatiKeur-Group<span>.</span></h1> -->
             </a>
 
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list "></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar  ">
                 <ul>
