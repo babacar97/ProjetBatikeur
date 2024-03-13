@@ -207,25 +207,54 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Script pour le diaporama partenaire
-let slideIndex = 0;
-showSlides();
+// let slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  let slides = document.querySelectorAll('.swiper-wrapper .testimonial-img');
+// function showSlides() {
+//   let slides = document.querySelectorAll('.swiper-wrapper .testimonial-img');
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'block';
-  }
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'block';
+//   }
 
-  slideIndex++;
+//   slideIndex++;
 
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
 
-  slides[slideIndex - 1].style.display = 'none';
-  setTimeout(showSlides, 500); // Change image every 2 seconds
+//   slides[slideIndex - 1].style.display = 'none';
+//   setTimeout(showSlides, 500); // Change image every 2 seconds
+// }
+
+const scrollers = document.querySelectorAll(".scroller");
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
 }
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+
 
 
 
