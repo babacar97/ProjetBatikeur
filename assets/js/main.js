@@ -207,26 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Script pour le diaporama partenaire
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   let slides = document.querySelectorAll('.swiper-wrapper .testimonial-img');
-
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'block';
-//   }
-
-//   slideIndex++;
-
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1;
-//   }
-
-//   slides[slideIndex - 1].style.display = 'none';
-//   setTimeout(showSlides, 500); // Change image every 2 seconds
-// }
-
 const scrollers = document.querySelectorAll(".scroller");
 
 // If a user hasn't opted in for recuded motion, then we add the animation
