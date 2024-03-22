@@ -91,6 +91,10 @@
       transform: translate(calc(-50% - 0.5rem));
     }
   }
+
+  .navbar ul:not(.btn, .btn-x) {
+    left: -100px;
+  }
 </style>
 
 <body>
@@ -114,7 +118,7 @@
           <li class="nav-item navbar-divider"></li>
           <li><a href="A-propos.html">A propos</a></li>
           <li class="nav-item navbar-divider"></li>
-          <li><a href="#services"> Nos solutions</a></li>
+          <li><a href="#services"> Nos services</a></li>
           <li class="nav-item navbar-divider"></li>
           <li><a href="#projects">Nos Projets</a></li>
           <li class="nav-item navbar-divider"></li>
@@ -124,10 +128,11 @@
           <li class="nav-item navbar-divider"></li>
           <li><a class="" href="https://calendly.com/batikeur" target="_blank"> UN RENDEZ-VOUS</a></li>
           <li class="nav-item navbar-divider"></li>
-          <li> <a href="https://form.jotform.com/240763976733064" target="_blank"
-              class="btn btn-get-startedTete11 position-relative" style="left:8px" data-aos="fade-up"
-              data-aos-delay="200">Demandez un Devis
-            </a></li>
+          <li>
+            <!-- <a href="#pack" class="btn btn-get-startedTete11 position-relative" style="left:8px" data-aos="fade-up"
+              data-aos-delay="200">
+            </a> -->
+          </li>
 
         </ul>
 
@@ -143,11 +148,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Visitez Batikeur, <span>votre bâtisseur 2.0 !</span></h2>
+            <h2 data-aos="fade-down">Rejoignez Batikeur, <span>votre bâtisseur 2.0 !</span></h2>
             <p data-aos="fade-up">Vous avez un projet de construction, rénovation...?
               Choisissez votre pack pour recevoir un devis gratuit et réalisez votre rêve !
             </p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#pack" class="btn-get-started">Choisir votre pack
+            <a data-aos="fade-up" data-aos-delay="200" href="#pack" class="btn-get-started">Demandez un Devis
             </a>
           </div>
         </div>
@@ -221,7 +226,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>NOS SOLUTIONS</h2>
+          <h2>NOS SERVICES</h2>
           <p>Que vous soyez un particulier ou une entreprise, Batikeur vous offre des
             solutions innovantes et adaptées à votre projet.
           </p>
@@ -689,8 +694,7 @@
           <pre></pre>
 
           </ul>
-          <a href="https://form.jotform.com/240763976733064" target="_blank"
-            class="btn  position-relative DevisOff">DEMANDEZ UN DEVIS
+          <a href="#pack" class="btn  position-relative DevisOff">DEMANDEZ UN DEVIS
           </a>
         </div>
         <div class="col-lg-6  text-center align-self-center lead">
@@ -739,10 +743,10 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>LIENS UTILES</h4>
             <ul class="text-white">
-              <li><a href="index.html#services" class="text-white">Nos solutions</a> </li>
+              <li><a href="index.html#services" class="text-white">Nos services</a> </li>
               <li><a href="index.html#pack" class="text-white">Choisir un pack</a> </li>
               <li><a href="https://calendly.com/batikeur" target="_blank" class="text-white">RDV en ligne</a> </li>
-              <li><a href="https://form.jotform.com/240763976733064" target="_blank" class="text-white">Demandez un
+              <li><a href="#pack" class="text-white">Demandez un
                   devis</a>
               </li>
               <li><a href="index.html#marche" class="text-white">Comment ça marche </a></li>
