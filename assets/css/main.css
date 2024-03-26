@@ -1928,7 +1928,10 @@ video {
   border: 2px solid var(--color-primary);
 }
 
-.hero .info .btn-get-started:hover {
+/* .hero .info .btn-get-started:hover {
+  background: var(--color-primary);
+} */
+.btn-get-started {
   background: var(--color-primary);
 }
 
