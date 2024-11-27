@@ -26,13 +26,23 @@
     <link rel="stylesheet" href="assets/css/cssEstimateur/5ae57.css">
 
     <link rel="stylesheet" href="assets/css/cssEstimateur/dcc9d.css">
-    <script defer src="https://keuryi.com/wp-content/cache/minify/818c0.js"></script>
     <meta />
 
     <style>
         body {
             background-color: aliceblue;
         }
+
+        .en-savoir {
+            color: #ee7800;
+
+        }
+
+        .en-savoir:hover {
+            background-color: #ee7800;
+            color: white
+        }
+
 
         .scroller {
             overflow: hidden;
@@ -82,7 +92,7 @@
             <nav id="navbar" class="navbar  ">
                 <ul>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="Estimateur.html" class="active">Accueil</a></li>
+                    <li><a href="index.html" class="active">Accueil</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="A-propos.html">A propos</a></li>
                     <li class="nav-item navbar-divider"></li>
@@ -91,6 +101,8 @@
                     <li><a href="#projects">Nos Projets</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="#marche">Comment ça marche</a></li>
+                    <li class="nav-item navbar-divider"></li>
+                    <li><a href="Estimateur.html">Simulateur</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="#contact">Contact</a></li>
                     <li class="nav-item navbar-divider"></li>
@@ -112,50 +124,101 @@
     <section>
         <br> <br>
         <section>
-            <div class="position-absolute " style="top: 200px;">
-                <div class="scroller">
-                    <div class="scroller__inner">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
-                        <img src="assets/img/carrousel estimateurs/2 UNITS OF 4BEDROOM DUPLEX OGUN STATE NIGERIA RF NO; {242OBD}.jpeg"
-                            class="img-fluid" alt="Image 1">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <img src="assets/img/carrousel estimateurs/30ee4be6-3c80-43af-a31f-38778d5b9faa.jpeg"
-                            class="img-fluid" alt="Image 3">
+            <div class="position-absolute " style="top: 130px; width: 100%; ">
+
+                <div class="text-center" style="background-color: #ee7800; color: white;">
+                    <br>
+                    <h3>NOS MODELES DE PROJET</h3>
+                    <p>Un support complet de votre projet, réalisation, coordination, conception des travaux …</p>
+                    <br>
+                </div>
+                <div class="container mt-5">
+                    <!-- Onglets -->
+                    <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                        <li class="nav-item col-lg-6" role="presentation">
+                            <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+                                type="button" role="tab" style="font-size: 20px; width: 100%;color: #ff5e14;">
+                                VILLA MOYEN
+                            </button>
+                        </li>
+                        <li class="nav-item col-lg-6" role="presentation">
+                            <button class="nav-link text-center" id="tab2-tab" data-bs-toggle="tab"
+                                data-bs-target="#tab2" type="button" role="tab"
+                                style="font-size: 20px; width: 100%;color: #ff5e14;">
+                                VILLA STANDING
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Contenu des onglets -->
+                    <div class="tab-content mt-3" id="myTabContent">
+                        <!-- Tab 1 -->
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d1.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d2.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d3.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2 -->
+                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-md-4 ">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d4.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d5.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                        <a href="villa detaille/d6.html" class="btn btn-primary mt-4 en-savoir"
+                                            style="font-size: 15px;">En savoir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
         </section>
-        <br><br><br>
+        <br><br><br><br><br><br>
         <main>
             <br><br><br>
             <br><br><br>
@@ -542,7 +605,7 @@
                             </div>
                             <div>
                                 <div style="font-size:60px;color:#1E3C6F;-webkit-text-stroke-color:#1E3C6F;">
-                                    <div class="mkdf-row-background-text-1">ESTIMATEUR</div>
+                                    <div class="mkdf-row-background-text-1">SIMULATEUR</div>
                                 </div>
                             </div>
                             <br>
@@ -686,8 +749,7 @@
                                                         <tr style="background-color: #fff;">
                                                             <td style="text-align: left; padding-left: 5px;"
                                                                 height="30">
-                                                                Travaux
-                                                                Préparatoire</td>
+                                                                Installation de chantier</td>
                                                             <td style="float:right;" height="30">
                                                                 <p id="traveauxPrep"></p>
                                                             </td>
@@ -912,29 +974,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const scrollers = document.querySelectorAll(".scroller");
 
-        // Check for reduced motion preference
-        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-            addAnimation();
-        }
-
-        function addAnimation() {
-            scrollers.forEach((scroller) => {
-                scroller.setAttribute("data-animated", true);
-
-                const scrollerInner = scroller.querySelector(".scroller__inner");
-                const scrollerContent = Array.from(scrollerInner.children);
-
-                scrollerContent.forEach((item) => {
-                    const duplicatedItem = item.cloneNode(true);
-                    duplicatedItem.setAttribute("aria-hidden", true);
-                    scrollerInner.appendChild(duplicatedItem);
-                });
-            });
-        }
-    </script>
 
 </body>
 

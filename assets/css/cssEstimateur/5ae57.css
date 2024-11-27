@@ -20,7 +20,7 @@ p a {
 
 a:hover,
 p a:hover {
-    color: #ff5e14
+    color: #ee7800
 }
 
 
@@ -62,7 +62,7 @@ table {
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    /* line-height: normal; */
+    line-height: normal;
     border-radius: 0;
     border: none;
     background: none;
@@ -86,7 +86,7 @@ table {
 .required .form .label:after,
 .form .required .label:after {
     content: " *";
-    color: #EB5A33;
+    color: #ee7800;
     font-weight: normal;
     font-size: 0.75em;
     font-family: 'Dosis';
@@ -130,7 +130,7 @@ table {
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    /* position: absolute; */
+    position: absolute;
     width: 1px
 }
 
@@ -164,7 +164,7 @@ table {
     font: inherit;
     /* line-height: normal; */
     cursor: pointer;
-    background: #EB5A33;
+    background: #ee7800;
     color: white;
     font-weight: bold;
     width: auto;
@@ -312,7 +312,7 @@ input#chck2 {
 }
 
 input:checked+.tab-label {
-    background: #ff5e14;
+    background: #ee7800;
     color: #fff
 }
 
@@ -390,7 +390,7 @@ span#totalSecondOeuvre {
 
 #totalEstimateur {
     padding-left: 1em;
-    background-color: #EB5A33;
+    background-color: #ee7800;
     padding-right: 1em
 }
 
@@ -409,4 +409,12 @@ span#totalSecondOeuvre {
     .elementor-section .elementor-container {
         flex-wrap: wrap
     }
+}
+
+.tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s
 }
