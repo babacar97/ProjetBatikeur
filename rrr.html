@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onglets avec Carrousel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <style>
@@ -20,82 +21,58 @@
         <br>
     </div>
     <div class="container mt-5">
-        <!-- Onglets -->
-        <ul class="nav nav-tabs row" id="myTab" role="tablist">
-            <li class="nav-item col-lg-6" role="presentation">
-                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
-                    role="tab" style="font-size: 20px; width: 100%;color: #ff5e14;">
-                    VILLA MOYEN
-                </button>
-            </li>
-            <li class="nav-item col-lg-6" role="presentation">
-                <button class="nav-link text-center" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2"
-                    type="button" role="tab" style="font-size: 20px; width: 100%;color: #ff5e14;">
-                    VILLA STANDING
-                </button>
-            </li>
-        </ul>
-        <!-- Contenu des onglets -->
-        <div class="tab-content mt-3" id="myTabContent">
-            <!-- Tab 1 -->
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-4">
+        <div class="container ">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
                         <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
-
+                            class="img-fluid" alt="Image 1">
+                        <div class="text-center">
+                            <a href="villa detaille/d1.html" class="btn btn-primary mt-4 en-savoir">En savoir plus</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
                         <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
                             class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
+                        <div class="text-center">
+                            <a href="villa detaille/d2.html" class="btn btn-primary mt-4 en-savoir">En savoir plus</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
                         <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
+                            class="img-fluid" alt="Image 3">
+                        <div class="text-center">
+                            <a href="villa detaille/d3.html" class="btn btn-primary mt-4 en-savoir">En savoir plus</a>
                         </div>
                     </div>
                 </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
 
-            <!-- Tab 2 -->
-            <div class="tab-pane fade" id="tab2" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-4 ">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                            class="img-fluid" alt="Image 2">
-                        <div class="d-flex justify-content-center">
-                            <a href="index.html" class="btn btn-primary mt-4">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // Large screens
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+            },
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

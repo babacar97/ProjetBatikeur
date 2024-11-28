@@ -72,6 +72,43 @@
                 transform: translateX(-50%);
             }
         }
+
+        section {
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+                overflow: hidden;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .mobile-nav-show {
+                position: relative;
+                right: -250px;
+                color: #ee7800;
+
+            }
+        }
+
+
+        @media (max-width: 1279px) {
+            .navbar ul {
+
+                position: absolute;
+                inset: 0;
+                padding: 50px 0 880px 0;
+                margin: 0;
+                background: rgba(0, 0, 0, 0.8);
+                overflow-y: auto;
+                transition: 0.3s;
+                z-index: 9998;
+            }
+        }
     </style>
 </head>
 
@@ -96,21 +133,21 @@
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="A-propos.html">A propos</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#services"> Nos services</a></li>
+                    <li><a href="index.html#services"> Nos services</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#projects">Nos Projets</a></li>
+                    <li><a href="index.html#projects">Nos Projets</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#marche">Comment ça marche</a></li>
+                    <li><a href="index.html#marche">Comment ça marche</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a href="Estimateur.html">Simulateur</a></li>
                     <li class="nav-item navbar-divider"></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li class="nav-item navbar-divider"></li>
                     <li><a class="btn btn-get-startedTete11 position-relative"
                             href="https://calendly.com/batikeur-group/30min" style="left:25px" ;
                             target="_blank">RENDEZ-VOUS</a></li>
                     <li>
-                        <a href="#pack" class="btn btn-get-startedTete11 position-relative"
+                        <a href="index.html#pack" class="btn btn-get-startedTete11 position-relative"
                             style="left:8px; visibility: hidden;" data-aos="fade-up" data-aos-delay="200">nnn
                         </a>
                     </li>
@@ -118,111 +155,53 @@
                 </ul>
 
             </nav><!-- .navbar -->
-
         </div>
     </header><!-- End Header -->
     <section>
-        <br> <br>
         <section>
-            <div class="position-absolute " style="top: 130px; width: 100%; ">
-
+            <div style=" width: 100%; ">
                 <div class="text-center" style="background-color: #ee7800; color: white;">
                     <br>
-                    <h3>NOS MODELES DE PROJET</h3>
-                    <p>Un support complet de votre projet, réalisation, coordination, conception des travaux …</p>
+                    <h3>NOS MODÈLES DE VILLAS </h3>
+                    <p>Pour vous offrir une inspiration adaptée à vos rêves !…</p>
                     <br>
                 </div>
-                <div class="container mt-5">
+                <br>
+                <div class="container type_standing">
                     <!-- Onglets -->
-                    <ul class="nav nav-tabs row" id="myTab" role="tablist">
-                        <li class="nav-item col-lg-6" role="presentation">
-                            <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
-                                type="button" role="tab" style="font-size: 20px; width: 100%;color: #ff5e14;">
-                                VILLA MOYEN
-                            </button>
-                        </li>
-                        <li class="nav-item col-lg-6" role="presentation">
-                            <button class="nav-link text-center" id="tab2-tab" data-bs-toggle="tab"
-                                data-bs-target="#tab2" type="button" role="tab"
-                                style="font-size: 20px; width: 100%;color: #ff5e14;">
-                                VILLA STANDING
-                            </button>
-                        </li>
-                    </ul>
-                    <!-- Contenu des onglets -->
-                    <div class="tab-content mt-3" id="myTabContent">
-                        <!-- Tab 1 -->
-                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                            <div class="row g-3">
-                                <div class="col-md-4">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d1.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                class="img-fluid" alt="Image 2">
+                            <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                <a href="villa detaille/d1.html" class="btn btn-primary mt-4 en-savoir"
+                                    style="font-size: 15px;">En savoir plus</a>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d2.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d3.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-
-                        <!-- Tab 2 -->
-                        <div class="tab-pane fade" id="tab2" role="tabpanel">
-                            <div class="row g-3">
-                                <div class="col-md-4 ">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d4.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d5.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
-                                        class="img-fluid" alt="Image 2">
-                                    <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
-                                        <a href="villa detaille/d6.html" class="btn btn-primary mt-4 en-savoir"
-                                            style="font-size: 15px;">En savoir plus</a>
-                                    </div>
-                                </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                class="img-fluid" alt="Image 2">
+                            <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                <a href="villa detaille/d2.html" class="btn btn-primary mt-4 en-savoir"
+                                    style="font-size: 15px;">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/carrousel estimateurs/Majestic Double Storey Home Design _ Wisdom Homes.jpeg"
+                                class="img-fluid" alt="Image 2">
+                            <div class="d-flex justify-content-center" style="position: relative;left: -150px;">
+                                <a href="villa detaille/d3.html" class="btn btn-primary mt-4 en-savoir"
+                                    style="font-size: 15px;">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
-        <br><br><br><br><br><br>
         <main>
-            <br><br><br>
-            <br><br><br>
-            <section class="elementor-section  elementor-section-boxed  ">
+            <br><br>
+            <section class="elementor-section  elementor-section-boxed   ">
                 <div class="elementor-container ">
                     <div>
                         <div class="">
@@ -612,7 +591,7 @@
                             <div class="elementor-element ">
                                 <div class="elementor-widget-container">
 
-                                    <div style="background: #F2F3F5; padding: 20px 15px 0px 15px;">
+                                    <div style="background: #F2F3F5;">
                                         <form name="keuryi_estimator" action='' class='form'>
                                             <p class='field required'>
                                                 <label class='label required' for='name'>Surface
@@ -872,6 +851,8 @@
             </section>
         </main>
     </section>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-52146548-3a3f-4ce7-9aef-fc3c02f9a829" data-elfsight-app-lazy></div>
     <footer id="footer" class="footer">
         <div class="footer-content position-relative">
             <div class="container">
@@ -973,8 +954,11 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/js/main.js"></script>
 
 </body>
 

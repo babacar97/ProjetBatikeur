@@ -31,6 +31,31 @@
         a {
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+
+            .mobile-nav-show {
+                position: relative;
+                right: -250px;
+                color: #ee7800;
+
+            }
+        }
+
+
+        @media (max-width: 1279px) {
+            .navbar ul {
+
+                position: absolute;
+                inset: 0;
+                padding: 50px 0 880px 0;
+                margin: 0;
+                background: rgba(0, 0, 0, 0.8);
+                overflow-y: auto;
+                transition: 0.3s;
+                z-index: 9998;
+            }
+        }
     </style>
 </head>
 
@@ -41,8 +66,9 @@
     <header id="header" class="header d-flex align-items-center ">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/AnyConv.com__logo batikeur -officiel.webp" class="rounded-circle" alt="">
+
+                <img src="../assets/img/AnyConv.com__logo batikeur -officiel.webp" class="rounded-circle" alt=""
+                    srcset="">
                 <!-- <h1>BatiKeur-Group<span>.</span></h1> -->
             </a>
 
@@ -81,6 +107,7 @@
         </div>
     </header><!-- End Header -->
     <main>
+        <br>
         <section class="page">
 
             <div class="container">
@@ -130,6 +157,8 @@
 
         </section>
     </main>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-52146548-3a3f-4ce7-9aef-fc3c02f9a829" data-elfsight-app-lazy></div>
     <footer id="footer" class="footer">
         <div class="footer-content position-relative">
             <div class="container">
@@ -232,6 +261,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
 </body>
 
 </html>

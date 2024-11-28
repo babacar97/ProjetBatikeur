@@ -24,8 +24,6 @@ p a:hover {
 }
 
 
-
-
 table {
     width: 100%
 }
@@ -44,9 +42,6 @@ table {
     position: relative;
     width: 100%
 }
-
-
-
 
 .form .label,
 .form .checkbox-input+label,
@@ -109,19 +104,6 @@ table {
     position: relative
 }
 
-
-
-
-
-/* .form .message {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    font-size: 0.625em;
-    color: white
-} */
-
 .form .checkbox-input,
 .form .option-input {
     border: 0;
@@ -162,7 +144,6 @@ table {
 
 .form .button {
     font: inherit;
-    /* line-height: normal; */
     cursor: pointer;
     background: #ee7800;
     color: white;
@@ -399,17 +380,12 @@ span#totalSecondOeuvre {
 }
 
 .elementor-section .elementor-container {
-    display: flex;
+    /* display: flex; */
     margin-right: auto;
     margin-left: auto;
     position: relative
 }
 
-@media (max-width:1024px) {
-    .elementor-section .elementor-container {
-        flex-wrap: wrap
-    }
-}
 
 .tab-label::after {
     content: "❯";
