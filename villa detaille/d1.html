@@ -56,6 +56,56 @@
                 z-index: 9998;
             }
         }
+
+
+        .scroller__inner {
+            padding-block: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .testimonial-img {
+            height: 300px;
+            width: 400px;
+        }
+
+        .scroller[data-animated="true"] .scroller__inner {
+            width: max-content;
+            flex-wrap: nowrap;
+            animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+        }
+
+        .scroller[data-direction="right"] {
+            --_animation-direction: reverse;
+        }
+
+        .scroller[data-direction="left"] {
+            --_animation-direction: forwards;
+        }
+
+        .scroller[data-speed="fast"] {
+            --_animation-duration: 40s;
+        }
+
+        .scroller[data-speed="slow"] {
+            --_animation-duration: 60s;
+        }
+
+        .carousel-inner {
+            display: flex;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translate(calc(-50% - 0.5rem));
+            }
+        }
+
+        .scroller__inner {
+            width: calc(400px * 6);
+            /* Par exemple, pour 6 images de 400px */
+        }
     </style>
 </head>
 
@@ -109,53 +159,124 @@
     <main>
         <br>
         <section class="page">
-
             <div class="container">
 
-                <h1>Les Maisons</h1>
-                <p><b><u>Description</u></b><span><br>
+                <h1 class="text-center">Villa économique</h1>
+                <p><b><u>DescriptifA :</u></b><span><br>
                     </span></p>
 
-                <p>Sur une parcelle de terrain de
-                    200m², la maison de type F3 est composée de:<span><br>
-                        - 1 salon<br>
-                        - 1 chambre<br>
-                        - 1 chambre avec pièce d'eau "douche et
-                        WC"<br>
-                        - 1 cuisine<br>
-                        - 1 pièce d'eau indépendante<br>
+                <p>Construite sur une surface batie de 147,86m2, cette villa est composée de :<span><br>
+
+                        • 1 salon + salle à manger +kitchenette<br>
+                        • 1 chambre d’ami + sdb<br>
+                        • 1 toilette visiteur<br>
+                        • 1 cuisine africaine + celier<br>
+                        • Espace familial<br>
+                        • Parking + fosse septique.<br>
                         <br>
                     </span></p>
 
-                <p>La maison de 64m2 est
-                    entourée d'un jardin et d'une clôture munie d'un portail (136m2).<span><br>
-                        <br>
-                        Les fondations de la maison sont prévues pour
-                        pouvoir accueillir un étage supplémentaire si son propriétaire souhaite une
-                        future extension.<br>
-                        <br>
-                        De même, la superficie du jardin permettrait de
-                        doubler la surface construite, laissant à son propriétaire tout le loisir de
-                        faire évoluer sa maison en fonction de ses besoins.<br>
-                        <br>
-                        <b><u>Prix de vente</u></b><br>
+                <p><b><u>A l’étage :</u></b><span><br>
                     </span></p>
 
-                <p>Le prix de vente d'une maison de type F3 est de 16.000.000&nbsp;Fcfa</p>
-                <p>Prix d'achat <u>au comptant</u> :&nbsp;4.000.000&nbsp;Fcfa (acompte "Apport")
-                    +&nbsp;12.000.000&nbsp;Fcfa
-                    (solde à la
-                    livraison)</p><br><br><br>
-                <br />
+                • 1 salon + balcon<br>
+                • 1 séjour<br>
+                • 1 chambre parent + sdb+dressing + balcon<br>
+                • 1 chambre + sdb + balcon<br>
+                • 1 chambre + sdb<br>
+                • 1 toilette commune.<br>
 
-                <div class="text-center">
-                    <h1>Plan de la maison</h1>
-                    <img src="../assets/img/carrousel estimateurs/Senegal Home design-v_2021_by KolyDesign®.jpeg"
-                        style="height: 600px; width: 800px;" alt="">
-                </div>
+
+                <p><br>
+                    Entourée d'une clôture munie d'un portail, la villa comprend une cour avant-jardin et
+                    une cour de service..<br>
+
+
+                </p>
+
+
+
+
             </div>
-
         </section>
+        <section id="testimonials" class="testimonials section-bg scroller" data-speed="fast">
+            <div class="section-header">
+                <h2>Plans de la villa</h2>
+            </div>
+            <div class="container tag-list scroller__inner" data-aos="fade-up">
+                <div>
+                    <div class="swiper-wrapper carousel-inner">
+                        <div class="testimonial-item active ">
+
+                            <img src="../villa detaille/img/3D1.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="testimonial-item  active ">
+
+                            <img src="../villa detaille/img/3D3.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+
+                        <div class="testimonial-item   active ">
+
+                            <img src="../villa detaille/img/3D4.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item   active ">
+                            <img src="../villa detaille/img/Vpetage.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item  active  ">
+                            <img src="../villa detaille/img/Vprdc.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item  active ">
+                            <img src="../villa detaille/img/Vptérasé.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item active ">
+
+                            <img src="../villa detaille/img/3D1.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="testimonial-item  active ">
+
+                            <img src="../villa detaille/img/3D3.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+
+                        <div class="testimonial-item   active ">
+
+                            <img src="../villa detaille/img/3D4.jpg" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item   active ">
+                            <img src="../villa detaille/img/Vpetage.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item  active  ">
+                            <img src="../villa detaille/img/Vprdc.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+                        <div class="testimonial-item  active ">
+                            <img src="../villa detaille/img/Vptérasé.PNG" class="testimonial-img" alt="">
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <!-- End testimonial item -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <div class="elfsight-app-52146548-3a3f-4ce7-9aef-fc3c02f9a829" data-elfsight-app-lazy></div>
@@ -262,7 +383,15 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
-
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/js/offscree-image.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
 </body>
 
 </html>
